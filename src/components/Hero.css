@@ -1,0 +1,99 @@
+.hero {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 100dvh;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../assets/hero.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+
+  animation: scaling 1.5s ease-out 0s 1;
+}
+
+@keyframes scaling {
+  0% {
+    scale: 1.1;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+.text-wrapper {
+  padding: 1rem;
+  margin-inline: 3rem;
+  /* width: fit-content; */
+}
+
+.hero-h1 {
+  font-size: 5rem;
+  text-shadow: 0.1rem 0.1rem 0.3rem black;
+  text-align: center;
+
+  animation: appear 1.5s ease-out 0s 1;
+}
+
+.hero-h2 {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  text-align: center;
+  text-shadow: 0.1rem 0.1rem 0.3rem black;
+  font-weight: 200;
+  text-indent: 1rem;
+  text-wrap: wrap;
+
+  animation: appear 1.5s ease-out 0s 1;
+}
+
+.contact-btn {
+  border: 0.15rem solid white;
+  margin-top: 3rem;
+
+  animation: appear 1.5s ease-out 0s 1;
+}
+
+.contact-btn:hover {
+  padding-inline: 2.5rem;
+  color: yellow;
+  border-color: yellow;
+}
+
+.contact-btn.fixed {
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+@keyframes appear {
+  0% {
+    transform: translateY(70%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 720px) {
+  .hero-h1 {
+    font-size: 3rem;
+  }
+  .hero-h2 {
+    font-size: 0.8rem;
+  }
+}
