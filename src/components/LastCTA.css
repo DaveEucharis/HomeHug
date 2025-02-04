@@ -1,0 +1,17 @@
+.last-cta-wrapper {
+  background-color: rgb(10, 10, 10);
+}
+
+.cta-btn-wrapper {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 1rem;
+}
+
+@media (max-width: 720px) {
+  .cta-btn-wrapper {
+    padding: 3rem;
+  }
+}

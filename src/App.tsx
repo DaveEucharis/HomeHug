@@ -1,14 +1,16 @@
-import { SyntheticEvent, useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 
 import Hero from './components/Hero'
 import Contact from './components/Contact'
 import Features from './components/Features'
+import LastCTA from './components/LastCTA'
+import { handleOpenContactsContext } from './hooks/contextAPI'
 
 const App = () => {
   const [showContacts, setShowContacts] = useState(false)
 
-  const handleContact = (ev: SyntheticEvent) => {
+  const handleOpenContact = () => {
     setShowContacts(true)
   }
 
@@ -23,14 +25,18 @@ const App = () => {
 
   return (
     <>
-      <Hero handleContact={handleContact} />
+      <handleOpenContactsContext.Provider value={handleOpenContact}>
+        <Hero />
 
-      <Contact
-        showContacts={showContacts}
-        closeContacts={closeContacts}
-      />
+        <Contact
+          showContacts={showContacts}
+          closeContacts={closeContacts}
+        />
 
-      <Features />
+        <Features />
+
+        <LastCTA />
+      </handleOpenContactsContext.Provider>
     </>
   )
 }

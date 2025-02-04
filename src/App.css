@@ -10,7 +10,7 @@
   padding: 0;
   box-sizing: border-box;
 
-  font-family: 'Roboto', serif;
+  font-family: 'Roboto', system-ui;
   color: white;
   /* outline: 1px solid green; */
 }
@@ -30,7 +30,7 @@ body.disable-scroll {
 
 .button {
   font-size: 2rem;
-  background: transparent;
+  background: rgba(0, 0, 0, 0.4);
 
   border-radius: 2rem;
   text-shadow: 0.1rem 0.1rem 0.3rem black;

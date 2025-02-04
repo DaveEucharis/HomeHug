@@ -12,10 +12,6 @@ const Contact = ({ showContacts, closeContacts }: Prop) => {
     closeContacts()
   }
 
-  const handleSubmit = (ev: SyntheticEvent) => {
-    ev.preventDefault()
-  }
-
   return (
     <>
       {showContacts ? <div className='blur-bg'></div> : null}
@@ -79,7 +75,6 @@ const Contact = ({ showContacts, closeContacts }: Prop) => {
           <button
             className='button send-btn'
             type='submit'
-            // onClick={handleSubmit}
           >
             Send
           </button>

@@ -1,0 +1,36 @@
+.contact-btn {
+  border: 0.15rem solid white;
+  margin-top: 1rem;
+
+  animation: appear 1.5s ease-out 0s 1;
+}
+
+.contact-btn:hover {
+  padding-inline: 2.5rem;
+  color: yellow;
+  border-color: yellow;
+}
+
+.airbnb-btn {
+  font-size: 1.3rem;
+  border: 0.15rem solid yellow;
+  color: yellow;
+  margin-top: 1rem;
+
+  animation: appear 1.5s ease-out 0s 1;
+}
+
+.airbnb-btn:hover {
+  border: 0.15rem solid white;
+  color: white;
+  padding-inline: 2.5rem;
+}
+
+@media (max-width: 720px) {
+  .airbnb-btn {
+    font-size: 1rem;
+  }
+  .contact-btn {
+    margin-top: 0;
+  }
+}
