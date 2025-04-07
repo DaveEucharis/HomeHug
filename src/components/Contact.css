@@ -56,7 +56,20 @@ form {
 .contacts > * {
   color: yellow;
   font-size: min(1rem, 3vw);
-  margin-top: 0.4rem;
+  margin-top: 0.5rem;
+
+  display: flex;
+  align-items: center;
+}
+
+.contacts > .name-text {
+  font-size: min(1.7rem, 6vw);
+  font-weight: 600;
+}
+
+.contacts > * > img {
+  width: 1.5rem;
+  margin-right: 0.5rem;
 }
 
 .x-btn {

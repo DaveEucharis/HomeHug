@@ -9,6 +9,24 @@
   height: 100dvh;
 }
 
+.homehug-logo {
+  position: fixed;
+  width: 5rem;
+  top: 5%;
+  left: 2%;
+  filter: drop-shadow(0 0 0.2rem var(--yellow-theme));
+  cursor: pointer;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  0% {
+    transform: rotate(360deg);
+  }
+}
+
 .hero::before {
   content: '';
   position: absolute;
@@ -36,21 +54,24 @@
 .text-wrapper {
   padding: 1rem;
   margin-inline: 3rem;
-  /* width: fit-content; */
 }
 
 .hero-h1 {
   font-size: 5rem;
   text-shadow: 0.1rem 0.1rem 1rem black;
   text-align: center;
+  text-wrap: balance;
 
   animation: appear 1.5s ease-out 0s 1;
 }
 
 .hero-h2 {
-  width: min(60rem, 90vw);
+  width: min(50rem, 90vw);
+  margin-inline: auto;
   margin-top: 1rem;
   font-size: 1rem;
+  text-align: center;
+  line-height: 1.1rem;
   text-shadow: 0.1rem 0.1rem 0.3rem black;
   font-weight: 300;
   text-wrap: wrap;
@@ -73,6 +94,9 @@
 }
 
 @media (max-width: 720px) {
+  .homehug-logo {
+    width: 3rem;
+  }
   .hero-h1 {
     font-size: 3rem;
   }

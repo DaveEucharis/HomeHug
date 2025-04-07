@@ -8,6 +8,13 @@ import diningImg from '../assets/dining.jpg'
 import doubleDeckImg from '../assets/double deck bed.jpg'
 import sofaImg from '../assets/sofa.jpg'
 
+import telephoneIcon from '../assets/telephone.svg'
+import gmailIcon from '../assets/gmail.svg'
+
+import exerciseIcon from '../assets/exercise.png'
+import cartIcon from '../assets/cart.svg'
+import netflixIcon from '../assets/netflix.svg'
+
 export {
   airconIcon,
   bedIcon,
@@ -17,4 +24,9 @@ export {
   diningImg,
   doubleDeckImg,
   sofaImg,
+  telephoneIcon,
+  gmailIcon,
+  exerciseIcon,
+  cartIcon,
+  netflixIcon,
 }

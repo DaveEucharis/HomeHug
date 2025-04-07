@@ -1,6 +1,8 @@
 import { SyntheticEvent } from 'react'
 import './Contact.css'
 
+import { telephoneIcon, gmailIcon } from '../hooks/imageImport'
+
 type Prop = {
   showContacts: boolean
   closeContacts: () => void
@@ -23,11 +25,28 @@ const Contact = ({ showContacts, closeContacts }: Prop) => {
           autoComplete='off'
           method='POST'
         >
+          <input
+            type='hidden'
+            name='_template'
+            value='table'
+          ></input>
           <div className='contact-header-wrapper'>
             <ul className='contacts'>
-              <li>Dave Payumo</li>
-              <li>09690413375</li>
-              <li>burningblaze90@gmail.com</li>
+              <li className='name-text'>Elpidas Payumo</li>
+              <li>
+                <img
+                  src={telephoneIcon}
+                  alt=''
+                />
+                (+63) 926-605-2214
+              </li>
+              <li>
+                <img
+                  src={gmailIcon}
+                  alt=''
+                />
+                etpayumo05@gmail.com
+              </li>
             </ul>
 
             <button
@@ -53,7 +72,7 @@ const Contact = ({ showContacts, closeContacts }: Prop) => {
             <span className='input-wrapper'>
               <label htmlFor='email'>Email</label>
               <input
-                type='text'
+                type='email'
                 placeholder='Email'
                 name='email'
                 id='email'
@@ -78,11 +97,6 @@ const Contact = ({ showContacts, closeContacts }: Prop) => {
           >
             Send
           </button>
-          <input
-            type='hidden'
-            name='_template'
-            value='table'
-          ></input>
         </form>
       </div>
     </>

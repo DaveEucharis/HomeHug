@@ -53,18 +53,17 @@
 }
 
 .features > * > span {
-  text-wrap: wrap;
-  /* text-align: center; */
+  text-wrap: balance;
+  text-align: center;
   color: black;
-  /* text-shadow: 0 0 0.1rem black; */
-  font-weight: 600;
+  font-weight: 700;
   font-size: 2rem;
   margin-top: 1rem;
 }
 
 .features > * > p {
   color: black;
-  /* text-align: center; */
+  text-align: center;
   text-wrap: balance;
   margin-top: 0.5rem;
   font-size: 1rem;
@@ -142,17 +141,18 @@
     margin-top: 3rem;
   }
   .features > * {
-    width: 14rem;
+    width: 16rem;
     height: 17rem;
   }
   .features > * > img {
     width: 4rem;
   }
   .features > * > span {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .features > * > p {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
+    line-height: 1.1rem;
   }
   .carousell-wrapper {
     margin-top: 0.5rem;

@@ -1,13 +1,60 @@
 .last-cta-wrapper {
+  padding-block: 3rem;
   background-color: rgb(10, 10, 10);
+}
+
+.benefits-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2.5rem;
+
+  padding: 1rem;
+  list-style: none;
+}
+
+.benefits-wrapper > li {
+  width: 15rem;
+}
+
+.benefits-wrapper > li > img {
+  display: block;
+  margin-inline: auto;
+  width: 8rem;
+}
+
+.benefits-wrapper > li > span {
+  color: yellow;
+  margin-top: 0.4rem;
+  font-size: 2rem;
+  font-weight: 500;
+  display: block;
+  text-align: center;
+}
+
+.benefits-wrapper > li > p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  text-wrap: wrap;
+  text-align: center;
+  line-height: 1.4rem;
 }
 
 .cta-btn-wrapper {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
-  padding: 1rem;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+footer {
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+  background-color: rgb(20, 20, 20);
+  padding: 2rem;
 }
 
 @media (max-width: 720px) {
